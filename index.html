@@ -13,7 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23ff5a1f%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2243%22%20text-anchor%3D%22middle%22%20font-size%3D%2230%22%20font-family%3D%22Arial%2Csans-serif%22%20font-weight%3D%22700%22%20fill%3D%22%230c0c0d%22%3E%E2%84%961%3C%2Ftext%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
-:root{--bg:#0c0c0d;--surface:#16161a;--soft:#1b1b20;--ink:#f5f5f1;--mute:#a3a39f;--accent:#ff5a1f;--on-accent:#0c0c0d;--accent-soft:#2c1a12;--line:#3a3a41;--dark:#000000;--on-dark:#f5f5f1;--live:#ff5a1f;--scrim:rgba(0,0,0,.75);--ov:rgba(5,5,6,.6);--r:0;--rs:0;--rm:0;--rl:0;--rb:0;--bw:3px;--dw:400;--dtrack:0;--dcase:uppercase;--accent-h:#ff7a45;--accent-t:#ff7a45;--live-a:#ff5a1fe6;--display:'Dela Gothic One',Impact,sans-serif;--text:Inter,system-ui,sans-serif}
+:root{--bg:#0c0c0d;--surface:#16161a;--soft:#1b1b20;--ink:#f5f5f1;--mute:#a3a39f;--accent:#ff5a1f;--on-accent:#0c0c0d;--accent-soft:#2c1a12;--line:#3a3a41;--dark:#000000;--on-dark:#f5f5f1;--live:#ff5a1f;--scrim:rgba(0,0,0,.75);--ov:rgba(5,5,6,.72);--r:0;--rs:0;--rm:0;--rl:0;--rb:0;--bw:3px;--dw:400;--dtrack:0;--dcase:uppercase;--accent-h:#ff7a45;--accent-t:#ff7a45;--live-a:#ff5a1fe6;--display:'Dela Gothic One',Impact,sans-serif;--text:Inter,system-ui,sans-serif}
 /* Общая основа сайтов «Чита»: всё управляется переменными темы. Оформление, шрифты и композицию каждый сайт задаёт сам. */
 *{box-sizing:border-box;margin:0}
 [hidden]{display:none!important}
@@ -315,12 +315,13 @@ h2::after{content:"";display:block;width:84px;height:8px;background:var(--accent
 .board h2::after,.card h2::after,.dh h2::after,.cc h3::after,.ok h3::after{display:none}
 .hero.v-full{min-height:min(86vh,740px)}
 .hero.v-full .in{max-width:980px}
-.hero h1{font-size:clamp(36px,6.4vw,84px);line-height:1.02}
-.num{position:absolute;right:-1vw;bottom:-6vw;font:400 clamp(260px,44vw,620px)/1 var(--display);color:transparent;-webkit-text-stroke:3px rgba(255,90,31,.55);pointer-events:none;z-index:0}
+.hero h1{font-size:clamp(32px,5.2vw,68px);line-height:1.08;text-wrap:balance}
+.num{position:absolute;right:-1vw;bottom:-6vw;font:400 clamp(260px,44vw,620px)/1 var(--display);color:transparent;-webkit-text-stroke:2px rgba(255,90,31,.3);pointer-events:none;z-index:0}
 .hero.v-full .in{z-index:1}
 .hero.v-full .pic{filter:saturate(.7)}
-.hero .lead{font-size:19px;color:#e2e2dc}
-.facts b{font-size:34px;color:var(--accent)}
+.hero .lead{font-size:18px;color:#ecece6}
+.hero .btn.soft{background:rgba(0,0,0,.72);color:#f5f5f1;border-color:rgba(245,245,241,.55)}
+.facts b{font-size:28px;color:var(--accent)}
 .btn{font-family:var(--display);font-size:14px;text-transform:uppercase;letter-spacing:.04em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
 .hour{font-size:18px}
 [data-bstyle="rows"] .hour{border-color:var(--line)}
